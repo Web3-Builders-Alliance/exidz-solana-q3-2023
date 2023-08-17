@@ -3,7 +3,13 @@
     "ts-node": "^10.9.1"
   },
   "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^2.13.0",
+    "@solana/web3.js": "^1.78.4",
     "@types/node": "^20.5.0",
     "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "metadata": "ts-node ./spl_metadata.ts",
+    "transfer": "ts-node ./spl_transfer.ts"
   }
 }

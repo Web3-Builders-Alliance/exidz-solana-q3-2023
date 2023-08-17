@@ -15,7 +15,7 @@ const connection = new Connection("https://api.devnet.solana.com", commitment);
       null,
       6
     );
-    console.log(`Mint info: ${mint}`);
+    console.log(`Mint id: ${mint}`);
   } catch (e) {
     console.log(`Oops, something went wrong: ${e}`);
   }

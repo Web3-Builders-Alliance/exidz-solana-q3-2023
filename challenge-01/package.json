@@ -6,7 +6,7 @@
     "typescript": "^5.1.6"
   },
   "scripts": {
-    "init": "ts-node ./spl_init.ts",
+    "spl_init": "ts-node ./spl_init.ts",
     "mint": "ts-node ./spl_mint.ts"
   },
   "devDependencies": {

@@ -40,7 +40,7 @@ const vault = PublicKey.findProgramAddressSync(
 (async () => {
   try {
     const tx = await program.methods
-      .depositSpl(new BN(0.1 * LAMPORTS_PER_SOL))
+      .withdraw(new BN(0.1 * LAMPORTS_PER_SOL))
       .accounts({
         owner: keypair.publicKey,
         vaultState,

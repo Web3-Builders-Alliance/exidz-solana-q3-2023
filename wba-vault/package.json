@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@project-serum/anchor": "^0.26.0",
+    "@solana/spl-token": "^0.3.8",
+    "@solana/web3.js": "^1.78.4",
+    "@types/node": "^20.5.0",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "vault_init": "ts-node ./vault_init.ts",
+    "deposit": "ts-node ./vault_deposit.ts",
+    "withdraw": "ts-node ./vault_withdraw.ts",
+    "deposit_spl": "ts-node ./vault_deposit_spl.ts",
+    "withdraw_spl": "ts-node ./vault_withdraw_spl.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}

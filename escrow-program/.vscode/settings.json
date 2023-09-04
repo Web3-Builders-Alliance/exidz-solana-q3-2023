@@ -1,0 +1,9 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./programs/escrow-program/Cargo.toml",
+        "./programs/escrow-program/Cargo.toml",
+        "./programs/escrow-program/Cargo.toml",
+        "./programs/escrow-program/Cargo.toml",
+        "./programs/escrow-program/Cargo.toml"
+    ]
+}

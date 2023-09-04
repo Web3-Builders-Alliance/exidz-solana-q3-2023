@@ -1,7 +1,6 @@
 import * as anchor from "@coral-xyz/anchor";
 import { WbaVault, IDL } from "../target/types/wba_vault";
 import {
-  Commitment,
   Keypair,
   LAMPORTS_PER_SOL,
   PublicKey,
@@ -19,12 +18,7 @@ import {
 describe("wba_vault", () => {
   // Configure the client to use the local cluster.
   anchor.setProvider(anchor.AnchorProvider.env());
-  const provider = anchor.AnchorProvider.local();
-
   const owner = new Keypair();
-
-  const commitment: Commitment = "finalized";
-
   const programId = new PublicKey(
     "5QYYRm4embEgtbGNc1Rm95BW6dJyJL3VDLhjXSSLQQ15"
   );
@@ -57,7 +51,7 @@ describe("wba_vault", () => {
 
   const token_decimals = 1_000_000n;
 
-  it("Airdrop token to owner and Mint SPL", async () => {
+  it("Airdrop token to owner account", async () => {
     await anchor
       .getProvider()
       .connection.requestAirdrop(
